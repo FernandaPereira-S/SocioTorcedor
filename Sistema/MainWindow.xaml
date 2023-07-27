@@ -1,0 +1,78 @@
+﻿<Window x:Class="Sistema_SocioTorcedor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sistema_SocioTorcedor"
+        mc:Ignorable="d"
+        FontSize="16"
+        Title="Sistema Sócio-Torcedor" Height="800" Width="1000" WindowState="Maximized">
+    <Grid Background="#0E1428">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Background="#4461C2">
+            <Expander Header="Cadastrar" Foreground="#0E1428" FontSize="20" Width="200" MinWidth="200"
+                      IsExpanded="True">
+                <StackPanel>
+                    <Button Content="Time" 
+                            Background="#0E1428" 
+                            Foreground="#fff"
+                            Padding="5" 
+                            BorderBrush="#fff" 
+                            BorderThickness="2" 
+                            Click="CadastrarTimeClick"/>
+                    <Button Content="Categoria" 
+                            Background="#0E1428" 
+                            Foreground="#fff"
+                            Padding="5" 
+                            BorderBrush="#fff" 
+                            BorderThickness="2" 
+                            Click="CadastrarCategoriaClick"/>
+                    <Button Content="Torcedor" 
+                            Background="#0E1428" 
+                            Foreground="#fff"
+                            Padding="5" 
+                            BorderBrush="#fff" 
+                            BorderThickness="2" 
+                            Click="CadastrarTorcedorClick"/>
+                </StackPanel>
+            </Expander>
+            <Expander Header="Consultar e Editar" Foreground="#0E1428" FontSize="20" Width="200" MinWidth="200"
+                      IsExpanded="True">
+                <StackPanel>
+                    <Button Content="Time" 
+                            Background="#0E1428" 
+                            Foreground="#fff"
+                            Padding="5" 
+                            BorderBrush="#fff" 
+                            BorderThickness="2" 
+                            Click="EditarTimeClick"/>
+                    <Button Content="Categoria" 
+                            Background="#0E1428" 
+                            Foreground="#fff"
+                            Padding="5" 
+                            BorderBrush="#fff" 
+                            BorderThickness="2" 
+                            Click="EditarCategoriaClick"/>
+                    <Button Content="Torcedor" 
+                            Background="#0E1428" 
+                            Foreground="#fff"
+                            Padding="5" 
+                            BorderBrush="#fff" 
+                            BorderThickness="2" 
+                            Click="EditarTorcedorClick"/>
+                </StackPanel>
+            </Expander>
+        </StackPanel>
+
+        <GridSplitter Grid.Column="1" Width="5" Background="Black"/>
+
+        <Grid Grid.Column="2" Name="PainelDireita">
+            
+        </Grid>
+    </Grid>
+</Window>
